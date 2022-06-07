@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+  }
+  
+  container {
+    display: grid;
+    grid-template-areas:
+    'Title Title'
+    'Menu main'
+    'footer footer';
+    grid-template-columns: 10% auto;
+    grid-template-rows: 10% auto;
+    height: 80vh;
+  }
+  
+  navbar {
+    background-color: #4174ff;
+    grid-area: Title;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  }
+  
+  sidebar {
+    grid-area: Menu;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  li {
+    list-style: none;
+    padding: 3px;
+    font-size: 15px;
+  }
+
+  
+  main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding: 10px 0;
+  }
+
+  
+ 
+ span {
+    color: rgb(80, 114, 177);
+  }
+  
+  
+
+  menu {
+    padding: 60px;
+    font-size: 40px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 1;
+  }
+ .nombre {
+    padding: 5px 0;
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+
+
+.precio {
+    padding: 5px 0 10px 0;
+    font-weight: 300;
+    
+
+  }
+  
+  
+
+  .imagen1 {
+    height: 300px;
+    background-image: url("./img/1.jpg");
+    background-size: cover;
+    background-position: center center;
+    min-height: 200px;
+    width: 80%;
+  }
+  
+  .imagen2 {
+    height: 300px;
+    background-image: url("./img/2.jpg");
+    background-size: cover;
+    background-position: center center;
+    min-height: 200px;
+    width: 80%;
+  }
+  
+  .imagen3 {
+    height: 300px;
+    background-image: url("./img/3.jpg");
+    background-size: cover;
+    background-position: center center;
+    min-height: 200px;
+    width: 80%;
+  }
+  
+  .imagen4 {
+    height: 300px;
+    background-image: url("./img/4.jpg");
+    background-size: cover;
+    background-position: center center;
+    min-height: 200px;
+    width: 80%;
+  }
+  
+ 
+  
+  
+  
+  footer {
+    background-color: #2f8ab4;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+  }
+  
+  .card button {
+    border: none;
+    width: 80%;
+    background-color: #9baeff;
+    padding: 10px;
+    font-weight: 400;
+    border-radius: 20px;
+  }
